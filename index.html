@@ -15,23 +15,19 @@
 </head>
 <body>
 	<header class="header">
-		<div class="burger">
-			|||
-		</div>
+		<button class="burger"></button>
 
 		<nav class="header__navigation navigation">
-			<div class="burger__close">
-				X
-			</div>
+			<button class="navigation__close"></button>
 			<ul class="navigation__list">
 				<li class="navigation__item">
-					<a class="navigation__link">Главная</a>
+					<a class="navigation__link navigation__link_active">Главная</a>
 				</li>
 				<li class="navigation__item">
 					<a class="navigation__link" href="video.html">Видео</a>
 				</li>
 				<li class="navigation__item">
-					<a class="navigation__link" href="foto.html">Фото</a>
+					<a class="navigation__link" href="photo.html">Фото</a>
 				</li>
 			</ul>
 
@@ -39,13 +35,13 @@
 
 			<ul class="header__social social">
 				<li class="social__item">
-					<a href="#" class="social__link" aria-label="ссылка facebook">fb</a>
+					<a href="#" class="social__link social__link_fb" aria-label="ссылка facebook"></a>
 				</li>
 				<li class="social__item">
-					<a href="#" class="social__link" aria-label="ссылка twitter">tw</a>
+					<a href="#" class="social__link social__link_twitter" aria-label="ссылка twitter"></a>
 				</li>
 				<li class="social__item">
-					<a href="#" class="social__link" aria-label="ссылка instagram">inst</a>
+					<a href="#" class="social__link social__link_inst" aria-label="ссылка instagram"></a>
 				</li>
 			</ul>
 		</nav>
@@ -56,7 +52,7 @@
 		</div>
 	</header>
 
-	<main class="main">
+	<main class="main main_index">
 		<img src="img/logo.png" alt="Логотип к фильму Бэтмен" class="logo" width="329" height="235">
 	</main>
 
