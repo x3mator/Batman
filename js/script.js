@@ -3,6 +3,7 @@
 
 
 const sliderThumbs = new Swiper('.slider-thumbs', {
+  preloadImages: true,
   loop: true,
   spaceBetween: 20,
   slidesPerView: 3,
@@ -15,9 +16,18 @@ sliderThumbs.on('click', (swiper) => {
 })
 
 const sliderMain = new Swiper('.slider-main', {
+  preloadImages: true,
   loop: true,
-  spaceBetween: 10,
-  loopedSlides: 4
+  autoHeight: true,
+  loopedSlides: 4,
+  keyboard: {
+    enabled: true,
+  },
+  mousewheel: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
 });
 
 sliderThumbs.controller.control = sliderMain;
