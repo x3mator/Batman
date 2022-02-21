@@ -28,6 +28,8 @@ try {
 
 //slider swiper
 try {
+  const pagination = document.querySelector('.pagination');
+  const paginationButton = document.querySelector('.pagination__arrow');
   const sliderThumbs = new Swiper('.slider-thumbs', {
     preloadImages: true,
     loop: true,
@@ -62,14 +64,9 @@ try {
     }
   })
 
-  const pagination = document.querySelector('.pagination');
-  const paginationButton = document.querySelector('.pagination__arrow');
-
   paginationButton.addEventListener('click', () => {
     pagination.classList.toggle('pagination_active');
   })
-
-
 } catch  {
   console.log('На этой странице нет слайдера')
 }

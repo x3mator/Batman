@@ -211,6 +211,7 @@ h1, h2, h3, p {
     background-image: url('../img/bg2x.jpg');
     background-position: top;
     background-size: cover;
+    image-rendering: optimizeQuality;
 }
 
 .logo {
@@ -278,7 +279,7 @@ h1, h2, h3, p {
 }
 
 .slider-main__video {
-    height: 100%;
+    height: 83vh;
     width: 100%;
     object-fit: contain; /*чтобы видео не искажалось*/
 }
@@ -366,10 +367,10 @@ h1, h2, h3, p {
     .navigation {
         position: fixed;
         top: 0;
-        left: 0;
+        left: -240px;
         bottom: 0;
         width: 240px;
-        transform: translateX(-240px);
+        transform: translateX(0);
         background-color: #260707;
         flex-direction: column;
         justify-content: flex-start;
@@ -381,11 +382,11 @@ h1, h2, h3, p {
     }
 
     .burger_active {
-        transform: translateX(0px);
+        transform: translateX(240px);
     }
 
     .navigation_active {
-        transform: translateX(0px);
+        transform: translateX(240px);
     }
 
     .navigation__list {
